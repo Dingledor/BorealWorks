@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Boreal Works</title>
-        <!-- The style.css file allows you to change the look of your web pages.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boreal Works</title>
+    <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    </head>
-    <body>
-        <div class=wrapper>
-            <div class=sidebar>
-                <div class="sidebar-image">
-                    <div class=inner>
-                        <img src="/images/wiretree.jpg">
-                    </div>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class=wrapper>
+        <div class=sidebar>
+            <div class="sidebar-image">
+                <div class=inner>
+                    <img src="/images/wiretree.jpg">
                 </div>
+            </div>
+            <div class=box>
+                <div class=inner>
+                    <p>Sidebar lorem ipsum dolor sit amet.</p>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+        <div class=main-wrapper>
+            <div class=title>
                 <div class=box>
                     <div class=inner>
-                        <p>Sidebar lorem ipsum dolor sit amet.</p>
-                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <h2>BOREAL WORKS</h2>
                     </div>
                 </div>
             </div>
-            <div class=main-wrapper>
-                <div class=title>
-                    <div class=box>
-                        <div class=inner>
-                            <h2>BOREAL WORKS</h2>
-                        </div>
+            <div class=links>
+                <div class=box>
+                    <div class=inner>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="busy_base2.html">About</a>
+                            </li>
+                            <li>
+                                <a href="projects.html">Projects</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class=links>
-                    <div class=box>
-                        <div class=inner>
-                            <ul>
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="busy_base2.html">About</a>
-                                </li>
-                                <li>
-                                    <a href="projects.html">Projects</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="main single-column">
-                    <div class=box>
-                      <div class=inner>
-                      <h2 style="text-align:center;">Little Prints</h2>
+            </div>
+            <div class="main single-column">
+                <div class=box>
+                    <div class=inner>
+                        <h2 style="text-align:center;">Little Prints</h2>
                         <p>
-                          This was a project to create components which would allow LittleBits circuitry toys to interface with the BluePrints mechanical toy system created by Sphero. The goal was to allow LittleBits motors and microcontrollers to drive contraptions built with BluePrints parts.
+                            This was a project to create components which would allow
+                            LittleBits circuitry toys to interface with the BluePrints
+                            mechanical toy system created by Sphero. The goal was to
+                            allow LittleBits motors and microcontrollers to drive contraptions
+                            built with BluePrints parts.
                         </p>
-                        <div>
-                            <div style="float: left; width: 70%;">
-                            <p>
-                          This project came about during my time working at the technology education non-profit PrairieSTEM after we met with representatives from Sphero to discuss BluePrints, the new mechanical toy system they were developing. I was very interested in BluePrints, as it seemed like a flexible system for making intersting mechanisms. For example, within a week I was able to create a functioning clock with multiple hands using only the base BluePrints pieces.
-                            </p>
-                            </div>
-                            <div style="float: right; width: 20%;">
-                                <video width="100" height="240" controls style="justify-content: center;">
-                                  <source src="/images/clockvideo.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                        <div style="float: right; width: 20%; padding-left: 20px;">
+                            <video width=100% height=100% controls style="justify-content: left;">
+                                <source src="/images/clockvideo.mp4" type="video/mp4">
+                            </video>
                         </div>
-                      </div>
+                        <p>
+                            This project came about during my time working at the technology
+                            education non-profit PrairieSTEM after we met with representatives
+                            from Sphero to discuss BluePrints, the new mechanical toy system
+                            they were developing. I was very interested in BluePrints, as it
+                            seemed like a flexible system for making intersting mechanisms.
+                            For example, within a week I was able to create a functioning clock
+                            with multiple hands using only the base BluePrints pieces.
+                        </p>
+                        <p>
+                            I was very interested in adding motorization to the BluePrint
+                            system. Our organization had previously taught lessons using
+                            "LittleBits" citcuitry toys which were also property of Sphero.
+                            The LittleBits system, in addition to having DC motors, provides
+                            access to circuitry such as lights, light sensors, buttons, and
+                            even programming through the "MicroBits" microcontroller. However,
+                            there were many challenges in adapting the two systems to interface
+                            with one another. First of all, BluePrints is based around a metric
+                            system, with blocks being intervals of 25mm. In contrast, the grids
+                            that hold the LittleBits elements are based on inches. This meant
+                            that all of the parts created to connect the two systems would have
+                            to account for this discrepancy. The axles used by the two systems
+                            were also incongruous, thus an adapter would have to be designed to
+                            allow the LittleBits motors to drive BluePrints gears.
+                        </p>
+                        <p>
+                            I began by 3D printing a handful of test parts to find a way to
+                            interface with the LittleBits system. The system uses a grid of
+                            holes as a base with each circuitry component having small pegs
+                            which friction-fit into the holes. I dialed in a design for my own
+                            pegs which could be 3D printed, as well as finding proper hole
+                            dimensions for my own printed parts. This was more complicated than
+                            simply using calipers as the 3D printer cannot print perfect
+                            tolerances from measurement.
+                        </p>
+                            <div style="text-align: center;">
+                                <img src="/images/littlebitspindimensions.jpg" width="70%">
+                            </div>
+                        <p>
+                            Once I had finished finding proper dimensions for the 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -78,5 +116,6 @@
                 </div>
             </div>
         </div>
-    </body>
+</body>
+
 </html>
