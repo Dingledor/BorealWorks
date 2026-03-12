@@ -3,11 +3,11 @@
    "how to change link color." */
 
 body {
-  background-image: url('images/littleprints.jpg');
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 10%;
-  margin: 0;
+  background-image: url('images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  margin: 0;  
   font-family: "Arial";
   font-size: 0.95rem;
   }
@@ -57,7 +57,7 @@ body {
 /*Basic box code that is used for all content boxes on the page.*/
 .box {
   background-color: #f1f1f1;
-  border: 7px solid blue;
+  border: 7px solid burlywood;
   border-style: inset;
   padding: 0.5em 1em;
   }
@@ -81,7 +81,8 @@ body {
   
 /*Container for the sidebar image.*/
 .sidebar-image {
-  border: 1px solid black;
+  border: 7px solid burlywood;
+  border-style: inset;
   }
   
 /*Remove extra padding line at the bottom of the image.*/
@@ -152,11 +153,13 @@ body {
     }
   
   .sidebar {
+    
     float: none;
     display: block;
     }
 
   .sidebar-image {
+    
     margin: 0 auto;
     width: 33%;
     margin-top:25px;
